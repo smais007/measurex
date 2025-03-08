@@ -1,0 +1,1 @@
+export type AreaUnit = "Square Meter" | "Square Kilometer" | "Square Centimeter" | "Square Millimeter" | "Square Micrometer" | "Hectare" | "Acre" | "Square Mile" | "Square Yard" | "Square Foot" | "Square Inch" | "Are" | "Barn" | "Rood" | "Section" | "Township" | "Dunam" | "Bigha" | "Marla" | "Katha" | "Cent" | "Guntha" | "Ground" | "Cuerda" | "Tsubo";

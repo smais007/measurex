@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getConverter = getConverter;
 exports.getSupportedUnits = getSupportedUnits;
+const area_1 = require("./area");
 const length_1 = require("./length");
 const temperature_1 = require("./temperature");
 const time_1 = require("./time");
@@ -11,6 +12,7 @@ const converters = [
     temperature_1.temperatureConverter,
     time_1.timeConverter,
     weigth_1.weightConverter,
+    area_1.areaConverter,
 ];
 const unitConverterMap = new Map();
 // Initialize converter registry

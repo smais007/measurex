@@ -16,7 +16,17 @@ const { convert } = require("./dist/index.js");
 // console.log("30 Days to Months:", convert(30, "Day", "Month"));
 // console.log("54 Weeks to Years:", convert(54, "Week", "Year"));
 
-console.log("1 Kilogram to Pounds:", convert(1, "Kilogram", "Pound"));
-console.log("10 Ounce to Kilograms:", convert(10, "Ounce", "Kilogram"));
+// console.log("1 Kilogram to Pounds:", convert(1, "Kilogram", "Pound"));
+// console.log("10 Ounce to Kilograms:", convert(10, "Ounce", "Kilogram"));
 
-console.log("1000 Grams to Ounces:", convert(1000, "Gram", "Ounce"));
+// console.log("1000 Grams to Ounces:", convert(1000, "Gram", "Ounce"));
+
+console.log(
+  "100 Square Meters to Acres:",
+  convert(100, "Square Meter", "Acre")
+);
+
+console.log(
+  "1 Square Kilometer to Hectares:",
+  convert(1, "Square Kilometer", "Hectare")
+);

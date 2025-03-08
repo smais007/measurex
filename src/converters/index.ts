@@ -1,4 +1,5 @@
 import { Converter } from "../utils/converters";
+import { areaConverter } from "./area";
 import { lengthConverter } from "./length";
 import { temperatureConverter } from "./temperature";
 import { timeConverter } from "./time";
@@ -9,7 +10,9 @@ const converters = [
   temperatureConverter,
   timeConverter,
   weightConverter,
+  areaConverter,
 ];
+
 const unitConverterMap = new Map<string, Converter>();
 
 // Initialize converter registry
