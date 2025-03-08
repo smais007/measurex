@@ -12,7 +12,9 @@ const { convert } = require("./dist/index.js");
 // console.log("212°F to Kelvin:", convert(212, "Fahrenheit", "Kelvin"));
 // console.log("10°C to Celsius:", convert(10, "Celsius", "Celsius"));
 
-// console.log("1 Second to Minutes:", convert(1, "Second", "Minute"));
+// console.log("Result:", convert(1, "Minute", "Second"));
+console.log("Result:", convert(60, "Second", "Minute"));
+
 // console.log("30 Days to Months:", convert(30, "Day", "Month"));
 // console.log("54 Weeks to Years:", convert(54, "Week", "Year"));
 
@@ -36,6 +38,14 @@ const { convert } = require("./dist/index.js");
 //   convert(1, "Cubic Foot", "Cubic Mile")
 // );
 
-console.log(convert(1, "Right Angle", "Sextant"));
-console.log(convert(1, "Revolution", "Revolution"));
-console.log(convert(90, "Degree", "Radian"));
+// console.log(convert(1, "Right Angle", "Sextant"));
+// console.log(convert(1, "Revolution", "Revolution"));
+// console.log(convert(90, "Degree", "Minute"));
+
+// console.log(convert("101010", "Binary", "Decimal"));
+
+// console.log(convert("255", "Decimal", "Hexadecimal"));
+
+// console.log(convert("Z", "Base-36", "Decimal"));
+
+// console.log(convert("FF", "Hexadecimal", "Base-32"));

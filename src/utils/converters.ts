@@ -1,6 +1,7 @@
 import { AngleUnit } from "../converters/angle/types";
 import { AreaUnit } from "../converters/area/types";
 import { LengthUnit } from "../converters/length/types";
+import { NumberBase } from "../converters/number/type";
 import { TemperatureUnit } from "../converters/temperature/types";
 import { TimeUnit } from "../converters/time/types";
 import { VolumeUnit } from "../converters/volume/types";
@@ -19,4 +20,5 @@ export type AnyUnit =
   | WeightUnit
   | AreaUnit
   | VolumeUnit
-  | AngleUnit;
+  | AngleUnit
+  | NumberBase;
