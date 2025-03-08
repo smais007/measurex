@@ -1,4 +1,5 @@
 import { Converter } from "../utils/converters";
+import { angleConverter } from "./angle";
 import { areaConverter } from "./area";
 import { lengthConverter } from "./length";
 import { temperatureConverter } from "./temperature";
@@ -13,6 +14,7 @@ const converters = [
   weightConverter,
   areaConverter,
   volumeConverter,
+  angleConverter,
 ];
 
 const unitConverterMap = new Map<string, Converter>();

@@ -1,0 +1,16 @@
+export type AngleUnit =
+  | "Degree"
+  | "Radian"
+  | "Gradian"
+  | "Minute"
+  | "Minute of Arc"
+  | "Second of Arc"
+  | "Gon"
+  | "Sign"
+  | "Mil"
+  | "Revolution"
+  | "Circle"
+  | "Turn"
+  | "Quadrant"
+  | "Right Angle"
+  | "Sextant";

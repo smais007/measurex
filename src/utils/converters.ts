@@ -1,3 +1,4 @@
+import { AngleUnit } from "../converters/angle/types";
 import { AreaUnit } from "../converters/area/types";
 import { LengthUnit } from "../converters/length/types";
 import { TemperatureUnit } from "../converters/temperature/types";
@@ -17,4 +18,5 @@ export type AnyUnit =
   | TimeUnit
   | WeightUnit
   | AreaUnit
-  | VolumeUnit; // Add future units here
+  | VolumeUnit
+  | AngleUnit;

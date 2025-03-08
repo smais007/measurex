@@ -31,7 +31,11 @@ const { convert } = require("./dist/index.js");
 //   convert(1, "Square Kilometer", "Hectare")
 // );
 
-console.log(
-  "1 Cubic Yard to Cubic Mile:",
-  convert(1, "Cubic Foot", "Cubic Mile")
-);
+// console.log(
+//   "1 Cubic Yard to Cubic Mile:",
+//   convert(1, "Cubic Foot", "Cubic Mile")
+// );
+
+console.log(convert(1, "Right Angle", "Sextant"));
+console.log(convert(1, "Revolution", "Revolution"));
+console.log(convert(90, "Degree", "Radian"));
