@@ -4,7 +4,8 @@ exports.getConverter = getConverter;
 exports.getSupportedUnits = getSupportedUnits;
 const length_1 = require("./length");
 const temperature_1 = require("./temperature");
-const converters = [length_1.lengthConverter, temperature_1.temperatureConverter];
+const time_1 = require("./time");
+const converters = [length_1.lengthConverter, temperature_1.temperatureConverter, time_1.timeConverter];
 const unitConverterMap = new Map();
 // Initialize converter registry
 converters.forEach((converter) => {

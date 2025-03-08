@@ -1,8 +1,9 @@
 import { Converter } from "../utils/converters";
 import { lengthConverter } from "./length";
 import { temperatureConverter } from "./temperature";
+import { timeConverter } from "./time";
 
-const converters = [lengthConverter, temperatureConverter];
+const converters = [lengthConverter, temperatureConverter, timeConverter];
 const unitConverterMap = new Map<string, Converter>();
 
 // Initialize converter registry

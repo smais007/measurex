@@ -11,3 +11,8 @@ const { convert } = require("./dist/index.js");
 // console.log("0°C to Fahrenheit:", convert(0, "Celsius", "Fahrenheit"));
 // console.log("212°F to Kelvin:", convert(212, "Fahrenheit", "Kelvin"));
 // console.log("10°C to Celsius:", convert(10, "Celsius", "Celsius"));
+
+console.log("1 Second to Minutes:", convert(1, "Second", "Minute"));
+
+console.log("30 Days to Months:", convert(30, "Day", "Month"));
+console.log("54 Weeks to Years:", convert(54, "Week", "Year"));
