@@ -5,6 +5,9 @@ const { convert } = require("./dist/index.js");
 // console.log("2.5 Miles to Meters:", convert(2.5, "Mile", "Meter"));
 // console.log("10 Light Years to Meters:", convert(10, "Light Year", "Meter"));
 
-console.log("5 Foot to Foot:", convert(5, "Foot", "Foot"));
+// console.log("Supported Units:", require("./dist/index.js").getSupportedUnits());
+// console.log("5 Foot to Foot:", convert(5, "Foot", "Foot"));
 
-console.log("Supported Units:", require("./dist/index.js").getSupportedUnits());
+// console.log("0°C to Fahrenheit:", convert(0, "Celsius", "Fahrenheit"));
+// console.log("212°F to Kelvin:", convert(212, "Fahrenheit", "Kelvin"));
+// console.log("10°C to Celsius:", convert(10, "Celsius", "Celsius"));

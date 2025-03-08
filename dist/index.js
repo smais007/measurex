@@ -1,30 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getSupportedUnits = void 0;
 exports.convert = convert;
-exports.getSupportedUnits = getSupportedUnits;
-const conversionTable = {
-    Meter: 1,
-    Kilometer: 1000,
-    Centimeter: 0.01,
-    Millimeter: 0.001,
-    Micrometer: 1e-6,
-    Nanometer: 1e-9,
-    Mile: 1609.34,
-    Yard: 0.9144,
-    Foot: 0.3048,
-    Inch: 0.0254,
-    "Light Year": 9.461e15,
-};
+const errors_1 = require("./utils/errors");
+const converters_1 = require("./converters");
+Object.defineProperty(exports, "getSupportedUnits", { enumerable: true, get: function () { return converters_1.getSupportedUnits; } });
 function convert(value, fromUnit, toUnit) {
-    if (!(fromUnit in conversionTable)) {
-        throw new Error(`Invalid fromUnit: ${fromUnit}`);
+    const sourceConverter = (0, converters_1.getConverter)(fromUnit);
+    const targetConverter = (0, converters_1.getConverter)(toUnit);
+    if (!sourceConverter || !targetConverter) {
+        throw new errors_1.ConversionError(`Unsupported unit: ${!sourceConverter ? fromUnit : toUnit}`);
     }
-    if (!(toUnit in conversionTable)) {
-        throw new Error(`Invalid toUnit: ${toUnit}`);
+    if (sourceConverter !== targetConverter) {
+        throw new errors_1.ConversionError(`Cannot convert between ${sourceConverter.category} and ${targetConverter.category}`);
     }
-    const meters = value * conversionTable[fromUnit];
-    return meters / conversionTable[toUnit];
-}
-function getSupportedUnits() {
-    return Object.keys(conversionTable);
+    return sourceConverter.convert(value, fromUnit, toUnit);
 }
