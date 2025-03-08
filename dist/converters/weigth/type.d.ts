@@ -1,0 +1,1 @@
+export type WeightUnit = "Kilogram" | "Gram" | "Milligram" | "Microgram" | "Metric Ton" | "Long Ton" | "Short Ton" | "Pound" | "Ounce" | "Stone" | "Carrat" | "Dram" | "Grain" | "Atomic Mass Unit" | "Tonne" | "Masha" | "Tola" | "Seer" | "Maund" | "Catty" | "Picul" | "Shekel" | "Talent" | "Drachma" | "Obolos" | "Quarter" | "Hundredweight";

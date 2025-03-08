@@ -5,7 +5,13 @@ exports.getSupportedUnits = getSupportedUnits;
 const length_1 = require("./length");
 const temperature_1 = require("./temperature");
 const time_1 = require("./time");
-const converters = [length_1.lengthConverter, temperature_1.temperatureConverter, time_1.timeConverter];
+const weigth_1 = require("./weigth");
+const converters = [
+    length_1.lengthConverter,
+    temperature_1.temperatureConverter,
+    time_1.timeConverter,
+    weigth_1.weightConverter,
+];
 const unitConverterMap = new Map();
 // Initialize converter registry
 converters.forEach((converter) => {

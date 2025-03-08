@@ -2,8 +2,14 @@ import { Converter } from "../utils/converters";
 import { lengthConverter } from "./length";
 import { temperatureConverter } from "./temperature";
 import { timeConverter } from "./time";
+import { weightConverter } from "./weigth";
 
-const converters = [lengthConverter, temperatureConverter, timeConverter];
+const converters = [
+  lengthConverter,
+  temperatureConverter,
+  timeConverter,
+  weightConverter,
+];
 const unitConverterMap = new Map<string, Converter>();
 
 // Initialize converter registry
