@@ -2,6 +2,7 @@ import { AreaUnit } from "../converters/area/types";
 import { LengthUnit } from "../converters/length/types";
 import { TemperatureUnit } from "../converters/temperature/types";
 import { TimeUnit } from "../converters/time/types";
+import { VolumeUnit } from "../converters/volume/types";
 import { WeightUnit } from "../converters/weigth/type";
 
 export interface Converter {
@@ -15,4 +16,5 @@ export type AnyUnit =
   | TemperatureUnit
   | TimeUnit
   | WeightUnit
-  | AreaUnit; // Add future units here
+  | AreaUnit
+  | VolumeUnit; // Add future units here

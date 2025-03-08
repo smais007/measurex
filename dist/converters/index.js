@@ -6,6 +6,7 @@ const area_1 = require("./area");
 const length_1 = require("./length");
 const temperature_1 = require("./temperature");
 const time_1 = require("./time");
+const volume_1 = require("./volume");
 const weigth_1 = require("./weigth");
 const converters = [
     length_1.lengthConverter,
@@ -13,6 +14,7 @@ const converters = [
     time_1.timeConverter,
     weigth_1.weightConverter,
     area_1.areaConverter,
+    volume_1.volumeConverter,
 ];
 const unitConverterMap = new Map();
 // Initialize converter registry

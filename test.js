@@ -21,12 +21,17 @@ const { convert } = require("./dist/index.js");
 
 // console.log("1000 Grams to Ounces:", convert(1000, "Gram", "Ounce"));
 
-console.log(
-  "100 Square Meters to Acres:",
-  convert(100, "Square Meter", "Acre")
-);
+// console.log(
+//   "100 Square Meters to Acres:",
+//   convert(100, "Square Meter", "Acre")
+// );
+
+// console.log(
+//   "1 Square Kilometer to Hectares:",
+//   convert(1, "Square Kilometer", "Hectare")
+// );
 
 console.log(
-  "1 Square Kilometer to Hectares:",
-  convert(1, "Square Kilometer", "Hectare")
+  "1 Cubic Yard to Cubic Mile:",
+  convert(1, "Cubic Foot", "Cubic Mile")
 );

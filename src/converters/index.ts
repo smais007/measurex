@@ -3,6 +3,7 @@ import { areaConverter } from "./area";
 import { lengthConverter } from "./length";
 import { temperatureConverter } from "./temperature";
 import { timeConverter } from "./time";
+import { volumeConverter } from "./volume";
 import { weightConverter } from "./weigth";
 
 const converters = [
@@ -11,6 +12,7 @@ const converters = [
   timeConverter,
   weightConverter,
   areaConverter,
+  volumeConverter,
 ];
 
 const unitConverterMap = new Map<string, Converter>();
