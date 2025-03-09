@@ -2,7 +2,7 @@ import { Converter } from "../utils/converters";
 import { angleConverter } from "./angle";
 import { areaConverter } from "./area";
 import { lengthConverter } from "./length";
-import { numberConverter } from "./number";
+// import { numberConverter } from "./number";
 import { temperatureConverter } from "./temperature";
 import { timeConverter } from "./time";
 import { volumeConverter } from "./volume";
@@ -16,20 +16,17 @@ const converters = [
   areaConverter,
   volumeConverter,
   angleConverter,
-  numberConverter,
 ];
 
 const unitConverterMap = new Map<string, Converter>();
 
 // Initialize converter registry
 converters.forEach((converter) => {
-  converter.units.forEach((unit) => {
-    unitConverterMap.set(unit, converter);
-  });
+  unitConverterMap.set(converter.category, converter); // Store by category instead of unit
 });
 
 export function getConverter(unit: string): Converter | undefined {
-  return unitConverterMap.get(unit);
+  return converters.find((converter) => converter.units.includes(unit));
 }
 
 export function getSupportedUnits(): string[] {

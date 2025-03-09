@@ -5,7 +5,7 @@ exports.ANGLE_CONVERSION = {
     Degree: 1, // Base unit
     Radian: 57.2958, // 1 rad = 180/π degrees
     Gradian: 0.9, // 1 grad = 0.9 degrees
-    Minute: 1 / 60,
+    Min: 1 / 60,
     "Minute of Arc": 0.0166667, // 1 arcminute = 1/60 degrees
     "Second of Arc": 0.000277778, // 1 arcsecond = 1/3600 degrees
     Gon: 0.9, // 1 gon = 0.9 degrees

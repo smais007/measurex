@@ -2,7 +2,7 @@ export type AngleUnit =
   | "Degree"
   | "Radian"
   | "Gradian"
-  | "Minute"
+  | "Min"
   | "Minute of Arc"
   | "Second of Arc"
   | "Gon"

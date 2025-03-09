@@ -5,7 +5,7 @@ export function convert(
   value: number,
   fromUnit: string,
   toUnit: string
-): number {
+): number | string {
   const sourceConverter = getConverter(fromUnit);
   const targetConverter = getConverter(toUnit);
 
