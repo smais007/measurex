@@ -20,7 +20,7 @@ A lightweight and efficient **conversion utility** that supports various **numbe
 Install via **npm**:
 
 ```sh
-npm install measurex
+npm install measure-x
 ```
 
 ---
