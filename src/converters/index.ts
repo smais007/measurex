@@ -2,7 +2,6 @@ import { Converter } from "../utils/converters";
 import { angleConverter } from "./angle";
 import { areaConverter } from "./area";
 import { lengthConverter } from "./length";
-// import { numberConverter } from "./number";
 import { temperatureConverter } from "./temperature";
 import { timeConverter } from "./time";
 import { volumeConverter } from "./volume";
