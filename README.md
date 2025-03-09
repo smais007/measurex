@@ -30,13 +30,13 @@ npm install measurex
 
 ###  Unit Conversions
 ```ts
-import { conver } from "measurex";
+import { convert } from "measurex";
 
 // Convert 10 meters to feet
-console.log(convertUnit(10, "Meter", "Feet")); // "32.8084"
+console.log(convert(10, "Meter", "Feet")); // "32.8084"
 
 // Convert 100°F to Celsius
-console.log(convertUnit(100, "Fahrenheit", "Celsius")); // "37.7778"
+console.log(convert(100, "Fahrenheit", "Celsius")); // "37.7778"
 ```
 
 ---
