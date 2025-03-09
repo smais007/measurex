@@ -1,7 +1,7 @@
-# measureX 📦
-=
+# measurex 📦
 
-A lightweight and efficient **conversion utility** that supports various  unit conversions, and more. 🚀
+
+A lightweight and efficient **conversion utility** that supports various **number system conversions**, unit conversions, and more. 🚀
 
 ---
 
@@ -33,10 +33,10 @@ npm install measurex
 import { conver } from "measurex";
 
 // Convert 10 meters to feet
-console.log(convertUnit(10, "meters", "feet")); // "32.8084"
+console.log(convertUnit(10, "Meter", "Feet")); // "32.8084"
 
 // Convert 100°F to Celsius
-console.log(convertUnit(100, "fahrenheit", "celsius")); // "37.7778"
+console.log(convertUnit(100, "Fahrenheit", "Celsius")); // "37.7778"
 ```
 
 ---
@@ -85,7 +85,7 @@ We welcome contributions! Follow these steps:
 
 ## 🔗 Links
 
-- **NPM Package**: [common-converter](https://www.npmjs.com/package/common-converter)
+- **NPM Package**: [measurex](https://www.npmjs.com/package/common-converter)
 - **GitHub Repo**: [GitHub](https://github.com/smais007/measurex)
 
 ---
