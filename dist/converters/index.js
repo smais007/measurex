@@ -5,7 +5,6 @@ exports.getSupportedUnits = getSupportedUnits;
 const angle_1 = require("./angle");
 const area_1 = require("./area");
 const length_1 = require("./length");
-// import { numberConverter } from "./number";
 const temperature_1 = require("./temperature");
 const time_1 = require("./time");
 const volume_1 = require("./volume");

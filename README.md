@@ -1,17 +1,15 @@
 # measurex 📦
 
-
 A lightweight and efficient **conversion utility** that supports various **number system conversions**, unit conversions, and more. 🚀
 
 ---
 
 ## 📌 Features
 
- 
 ✅ **Unit Conversions** (Length, Weight, Temperature, etc.)  
 ✅ **Simple API & Zero Dependencies**  
 ✅ **Lightweight & Fast**  
-✅ **TypeScript Support**  
+✅ **TypeScript Support**
 
 ---
 
@@ -27,10 +25,10 @@ npm install measure-x
 
 ## 🚀 Usage
 
+### Unit Conversions
 
-###  Unit Conversions
 ```ts
-import { convert } from "measurex";
+import { convert } from "measure-x";
 
 // Convert 10 meters to feet
 console.log(convert(10, "Meter", "Feet")); // "32.8084"
@@ -43,14 +41,15 @@ console.log(convert(100, "Fahrenheit", "Celsius")); // "37.7778"
 
 ## 📚 API Reference
 
-###  `convert(value: number, from: string, to: string): number`
+### `convert(value: number, from: string, to: string): number`
+
 Converts between different units (length, weight, temperature, etc.).
 
-| Parameter | Type      | Description                      |
-|-----------|----------|----------------------------------|
-| `value`   | `number` | The value to convert            |
-| `from`    | `string` | The unit of the input value     |
-| `to`      | `string` | The unit to convert to          |
+| Parameter | Type     | Description                 |
+| --------- | -------- | --------------------------- |
+| `value`   | `number` | The value to convert        |
+| `from`    | `string` | The unit of the input value |
+| `to`      | `string` | The unit to convert to      |
 
 Supported Units: `meters`, `feet`, `kilograms`, `pounds`, `celsius`, `fahrenheit`, etc.
 
@@ -67,15 +66,15 @@ This project is **MIT licensed**. See [LICENSE](./LICENSE) for details.
 We welcome contributions! Follow these steps:
 
 1. **Fork** the repo
-2. **Clone** your fork:  
+2. **Clone** your fork:
    ```sh
    git clone https://github.com/smais007/measurex.git
    ```
-3. **Install dependencies**:  
+3. **Install dependencies**:
    ```sh
    npm install
    ```
-4. **Make changes & commit**:  
+4. **Make changes & commit**:
    ```sh
    git commit -m "Your meaningful commit message"
    ```
